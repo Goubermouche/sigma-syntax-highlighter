@@ -1,3 +1,6 @@
+:: a simple script that updates the extension folder in visual studio
+:: code's extensions folder and reopens it.
+
 @echo off
 
 setlocal enabledelayedexpansion
