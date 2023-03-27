@@ -1,0 +1,85 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Channel",
+	"scopeName": "main.ch",
+	"fileTypes": [
+		".ch"
+	],
+	"patterns": [
+		{
+			"include": "#function_declaration"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords_numerical"
+		},
+		{
+			"include": "#constant_numeric"
+		},
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash",
+					"match": "\/\/.*"
+				}
+			]
+		},
+		"keywords_numerical": {
+			"patterns": [
+				{
+					"name": "storage.type.numerical",
+					"match": "\\b(?:i8|i16|i32|i64|u8|u16|u32|u64|f32|f64)\\b"
+				}
+			]
+		},
+		"function_declaration": {
+			"patterns": [
+				{
+					"begin": "([\\w:]+\\s*(?:<.*?>)?\\s*[*&]?\\s*)+\\s+([\\w:]+)\\s*(\\()",
+					"end": "(\\))\\s*(?:(?=\\{)|;)",
+					"beginCaptures": {
+						"1": {
+						"name": "storage.type.return-type.c++"
+						},
+						"2": {
+						"name": "entity.name.function.c++"
+						},
+						"3": {
+						"name": "punctuation.section.group.begin.c++"
+						}
+					},
+					"endCaptures": {
+						"1": {
+						"name": "punctuation.section.group.end.c++"
+						}
+					},
+					"patterns": [
+						{
+						"name": "variable.parameter.c++",
+						"match": "\\b([\\w\\s]+)\\s+([\\w]+)(?=,|\\))"
+						}
+					]
+				}
+			]
+		},
+		"constant_numeric": {
+			"patterns": [{
+				"match": "\\b\\d+(?:\\.\\d+)?(?:[fu])?\\b",
+				"name": "constant.numeric.simple-numeric"
+			}]
+		},
+		"keywords" : {
+			"patterns": [{
+				"name": "keyword.control",
+				"match": "\\b(?:return|if|else|while|do|for|switch|case|default|break|continue|goto)\\b"
+			}]
+		}
+	}
+}

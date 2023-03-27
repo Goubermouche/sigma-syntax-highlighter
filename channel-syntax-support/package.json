@@ -1,0 +1,25 @@
+{
+  "name": "channel-syntax-support",
+  "displayName": "Channel syntax support",
+  "description": "Syntax highlight support for the Channel programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "channel",
+      "aliases": ["Channel", "channel"],
+      "extensions": [".ch"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "channel",
+      "scopeName": "main.ch",
+      "path": "./syntaxes/channel.tmLanguage.json"
+    }]
+  }
+}
