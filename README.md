@@ -1,5 +1,5 @@
 ## Channel syntax highlighter
-This repository is part of a bigger project called [Channel](https://github.com/Goubermouche/language) - a GPU based, parallel programming language. This project specifically works as a simple syntax highlighter module for common editors such as Visual Studio Code or Atom.
+This repository is part of a bigger project called [Channel](https://github.com/Goubermouche/Channel-language) - a GPU based, parallel programming language. This project specifically works as a simple syntax highlighter module for common editors such as Visual Studio Code or Atom.
 ## Getting up and running
 <ins>**1. Downloading the repository:**</ins>   
 Clone the repository with `git clone https://github.com/Goubermouche/Channel-syntax-highlighter.git`.
