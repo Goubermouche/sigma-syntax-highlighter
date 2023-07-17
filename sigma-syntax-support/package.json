@@ -1,0 +1,25 @@
+{
+  "name": "sigma-syntax-support",
+  "displayName": "Sigma syntax support",
+  "description": "Syntax highlight support for the Sigma programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "sigma",
+      "aliases": ["Sigma", "sigma"],
+      "extensions": [".s"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "sigma",
+      "scopeName": "main.s",
+      "path": "./syntaxes/sigma.tmLanguage.json"
+    }]
+  }
+}

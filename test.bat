@@ -6,7 +6,7 @@
 setlocal enabledelayedexpansion
 
 set "vscode_path=%USERPROFILE%\.vscode\extensions"
-set "source_folder=channel-syntax-support"
+set "source_folder=sigma-syntax-support"
 set "current_path=%~dp0"
 set "folder_path=%vscode_path%\%source_folder%"
 
