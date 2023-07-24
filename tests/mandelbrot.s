@@ -1,3 +1,4 @@
+// mandelbrot gen function
 u64 mandelbrot(
     f64 real, 
     f64 imag,
@@ -23,6 +24,7 @@ u64 mandelbrot(
     return max_iterations;
 }
 
+// char selector
 char get_char(
     u64 iterations,
     u64 max_iterations
