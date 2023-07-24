@@ -35,6 +35,9 @@
 		},
 		{
 			"include": "#boolean_literals"
+		},
+		{
+			"include": "#pragma_directives"
 		}
 	],
 	"repository": {
@@ -164,6 +167,14 @@
 				{
 					"name": "constant.language.boolean",
 					"match": "\\b(?:true|false)\\b"
+				}
+			]
+		},
+		"pragma_directives": {
+			"patterns": [
+				{
+					"name": "keyword.control",
+					"match": "#[\\w]+"
 				}
 			]
 		}
