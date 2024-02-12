@@ -1,7 +1,19 @@
 {
+  "name": "sigma-syntax",
+  "displayName": "Sigma Syntax",
+  "version": "0.0.1",
+  "publisher": "goubermouche",
+  "icon": "assets/icon.png",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
   "dependencies": {
     "generator-code": "^1.7.5",
     "yo": "^4.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Goubermouche/sigma-syntax-highlighter"
   },
   "scripts": {
     "test": "test.bat"

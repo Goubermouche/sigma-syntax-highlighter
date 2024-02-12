@@ -1,0 +1,45 @@
+# Exclude node_modules folder
+node_modules/
+
+# Exclude source files (if you have bundled your extension)
+src/
+
+# Exclude git and other VCS directories
+.git/
+.gitignore
+.hg/
+.svn/
+
+# Exclude build and scripting files
+webpack.config.js
+tsconfig.json
+*.ts
+
+# Exclude test directories and files
+test/
+*.test.js
+*.spec.js
+
+# Exclude documentation and markdown files
+README.md
+CONTRIBUTING.md
+CHANGELOG.md
+*.md
+
+# Exclude configuration files
+*.config.js
+.editorconfig
+.eslintignore
+.eslintrc.json
+.prettierrc
+.vscode/
+
+# Exclude other non-runtime files
+*.log
+*.lock
+yarn.lock
+
+# Exclude example, sample, or demo files
+examples/
+samples/
+demo/

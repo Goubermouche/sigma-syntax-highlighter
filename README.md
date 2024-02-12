@@ -1,5 +1,6 @@
-## Sigma syntax highlighter
-This repository is part of a bigger project called [Sigma](https://github.com/Goubermouche/sigma) - a GPU based, parallel programming language. This project, specifically, works as a simple syntax highlighter module for common editors such as Visual Studio Code or Atom.
+## Sigma syntax
+This extension provides simple syntax highlighting for the [Sigma programming language](https://github.com/Goubermouche/sigma) - a GPU based, parallel programming language.
+
 ## Getting up and running
 <ins>**1. Downloading the repository:**</ins>   
 Clone the repository with `git clone https://github.com/Goubermouche/sigma-syntax-highlighter.git`.
